@@ -1,6 +1,6 @@
-# React App: Tiny Stroopwafel
+# React App: sci-knowledge-cafe
 
-Welcome to **Tiny Stroopwafel**, a React-based web application hosted on Netlify. This app showcases a simple and interactive user interface built with modern web technologies.
+**sci-knowledge-cafe** is a React-based web application hosted on Netlify. This app showcases a simple and interactive user interface built with modern web technologies.
 
 ## Live Demo
 
@@ -13,15 +13,15 @@ Check out the live demo of the app here:
 
 - **Responsive Design**: Built with responsiveness in mind, ensuring a seamless experience across devices.
 - **Interactive UI**: Engaging user interface components for a smooth user experience.
-- **Modern Tech Stack**: Utilizes React, JavaScript, HTML, and CSS for development.
+- **Modern Tech Stack**: Utilizes React, JavaScript, HTML, and CSS (Tailwind CSS) for development.
 - **Deployed on Netlify**: Fast and reliable hosting with continuous deployment.
 
 ---
 
 ## Technologies Used
 
-- **Frontend**: React, JavaScript, HTML, CSS
-- **Build Tool**: Vite or Create React App (whichever you used)
+- **Frontend**: React, JavaScript, HTML, CSS (Tailwind CSS)
+- **Build Tool**: Vite 
 - **Hosting**: Netlify
 - **Version Control**: Git and GitHub
 
