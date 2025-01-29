@@ -1,9 +1,25 @@
 import "./Blog.css";
 import { FaBookmark } from "react-icons/fa";
 import PropTypes from "prop-types"; // ES6
-const Blog = ({ blog,bookmarksHandler }) => {
-  const { author, cover, title, authorImg, hashtags, readingTime } = blog;
+const Blog = ({ blog,bookmarksHandler,handleMarkAsRead }) => {
+  const { id,author, cover, title, authorImg, hashtags, readingTime,writingDate } = blog;
   // console.log(blog);
+  
+
+   // Function to calculate the difference in days (handling YMD format)
+   const getDaysAgo = (writingDate) => {
+    const today = new Date(); // Current date
+    const writingDateParsed = new Date(writingDate); // Parse the YMD format date
+    const timeDiff = today - writingDateParsed; // Difference in milliseconds
+    const daysAgo = Math.floor(timeDiff / (1000 * 3600 * 24)); // Convert ms to days
+    return daysAgo;
+  };
+
+  // Calculate the number of days ago the blog was written
+  const daysAgo = getDaysAgo(writingDate);
+
+
+
   return (
     <div className="blog-container mb-8">
       <img className=" w-full h-[500px] rounded-xl p-2" src={cover} alt="" />
@@ -14,7 +30,7 @@ const Blog = ({ blog,bookmarksHandler }) => {
           </div>
           <div className="ml-2">
             <h4>{author}</h4>
-            <p>Date: 15/5/2025 (4 days ago)</p>
+            <p>Date: {writingDate} (Posted {daysAgo} Days ago) </p>
           </div>
         </div>
 
@@ -22,8 +38,8 @@ const Blog = ({ blog,bookmarksHandler }) => {
           <span>
             <a href="">{readingTime} min read</a>
           </span>
-          <button onClick={()=>bookmarksHandler(blog)} className="m-2">
-            <FaBookmark className="text-gray-500"/>
+          <button onClick={()=>bookmarksHandler(blog)} className="m-2  cursor-pointer">
+            <FaBookmark className="text-gray-500 hover:text-blue-400"/>
           </button>
         </div>
       </div>
@@ -33,13 +49,16 @@ const Blog = ({ blog,bookmarksHandler }) => {
         <span key={idx}>{tag} </span>
       ))}
       <br />
-      <button className="p-2 text-gray-600">Mark as read</button>
+      <button onClick={()=>handleMarkAsRead(id,readingTime)} className=" text-[#6047EC] underline 
+       hover:bg-blue-300 transition-colors duration-300 rounded-2xl cursor-pointer p-2">
+        Mark as read</button>
       
     </div>
   );
 };
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
-  bookmarksHandler:PropTypes.func.isRequired
+  bookmarksHandler:PropTypes.func.isRequired,
+  handleMarkAsRead:PropTypes.func.isRequired
 };
 export default Blog;

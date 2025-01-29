@@ -3,10 +3,10 @@ import { useState } from "react";
 import Blog from "../Blog/Blog";
 import PropTypes from 'prop-types'; // ES6
 
-const Blogs = ({bookmarksHandler}) => {
+const Blogs = ({bookmarksHandler,handleMarkAsRead}) => {
     //declare state
     const [blogs,setBlogs]=useState([]);
-    console.log(blogs);
+    // console.log(blogs);
     
     // declare useEffects
     useEffect(()=>{
@@ -22,6 +22,7 @@ const Blogs = ({bookmarksHandler}) => {
                 blogs.map(blog=><Blog
                 key={blog.id}
                 blog={blog}
+                handleMarkAsRead={handleMarkAsRead}
                 bookmarksHandler={bookmarksHandler}></Blog>)
             }
         </div>
@@ -29,7 +30,9 @@ const Blogs = ({bookmarksHandler}) => {
 };
 
 Blogs.propTypes={
-    bookmarksHandler :PropTypes.func
+    bookmarksHandler :PropTypes.func.isRequired,
+    readingTime:PropTypes.func.isRequired,
+    handleMarkAsRead:PropTypes.func.isRequired
 
 }
 

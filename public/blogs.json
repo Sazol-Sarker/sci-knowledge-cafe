@@ -1,66 +1,72 @@
 [
-    {
-      "id": 1,
-      "cover": "https://i.ibb.co.com/5YM9Gf1/polina-abramova-i1q-KR27-Pq-Dc-unsplash.jpg",
-      "title": "The Art of Minimalism",
-      "author": "John Doe",
-      "authorImg": "./images/authorImages/author1.jpg",
-      "readingTime": 5,
-      "hashtags": ["#minimalism", "#lifestyle", "#productivity"]
-    },
-    {
-      "id": 2,
-      "cover": "https://i.ibb.co.com/QPx8Fy7/worker-reading-news-with-tablet.jpg",
-      "title": "Mastering JavaScript",
-      "author": "Jane Smith",
-      "authorImg": "./images/authorImages/author2.jpg",
-      "readingTime": 12,
-      "hashtags": ["#javascript", "#webdev", "#programming"]
-    },
-    {
-      "id": 3,
-      "cover": "https://i.ibb.co.com/7bvx2Xd/brett-ritchie-1v-KTnw-LMdqs-unsplash.jpg",
-      "title": "Exploring the Cosmos",
-      "author": "Dr. Emily Carter",
-      "authorImg": "./images/authorImages/author3.jpg",
-      "readingTime": 8,
-      "hashtags": ["#space", "#science", "#cosmos"]
-    },
-    {
-      "id": 4,
-      "cover": "https://i.ibb.co.com/KXxcgGj/alicia-christin-gerald-zm4-Cc-Be-Bbp8-unsplash.jpg",
-      "title": "The Psychology of Success",
-      "author": "Michael Johnson",
-      "authorImg": "./images/authorImages/author4.jpg",
-      "readingTime": 10,
-      "hashtags": ["#psychology", "#success", "#selfhelp"]
-    },
-    {
-      "id": 5,
-      "cover": "https://i.ibb.co.com/BCHfC8q/close-up-hands-typing-keyboard.jpg",
-      "title": "Vegan Recipes for Beginners",
-      "author": "Sophia Green",
-      "authorImg": "./images/authorImages/author5.jpg",
-      "readingTime": 6,
-      "hashtags": ["#vegan", "#recipes", "#food"]
-    },
-    {
-      "id": 6,
-      "cover": "https://i.ibb.co.com/BCHfC8q/close-up-hands-typing-keyboard.jpg",
-      "title": "AI Revolution: What You Need to Know",
-      "author": "David Lee",
-      "authorImg": "./images/authorImages/author1.jpg",
-      "readingTime": 15,
-      "hashtags": ["#AI", "#technology", "#innovation"]
-    },
-    {
-      "id": 7,
-      "cover": "https://i.ibb.co.com/FsdrpMY/lesly-juarez-DFtj-XYd5-Pto-unsplash.jpg",
-      "title": "Mindfulness for a Stress-Free Life",
-      "author": "Olivia Brown",
-      "authorImg": "./images/authorImages/author1.jpg",
-      "readingTime": 7,
-      "hashtags": ["#mindfulness", "#mentalhealth", "#wellness"]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "cover": "https://i.ibb.co.com/5YM9Gf1/polina-abramova-i1q-KR27-Pq-Dc-unsplash.jpg",
+    "title": "The Art of Minimalism",
+    "author": "John Doe",
+    "authorImg": "./images/authorImages/author1.jpg",
+    "readingTime": 5,
+    "hashtags": ["#minimalism", "#lifestyle", "#productivity"],
+    "writingDate": "2024-01-15"
+  },
+  {
+    "id": 2,
+    "cover": "https://i.ibb.co.com/QPx8Fy7/worker-reading-news-with-tablet.jpg",
+    "title": "Mastering JavaScript",
+    "author": "Jane Smith",
+    "authorImg": "./images/authorImages/author2.jpg",
+    "readingTime": 12,
+    "hashtags": ["#javascript", "#webdev", "#programming"],
+    "writingDate": "2024-02-08"
+  },
+  {
+    "id": 3,
+    "cover": "https://i.ibb.co.com/7bvx2Xd/brett-ritchie-1v-KTnw-LMdqs-unsplash.jpg",
+    "title": "Exploring the Cosmos",
+    "author": "Dr. Emily Carter",
+    "authorImg": "./images/authorImages/author3.jpg",
+    "readingTime": 8,
+    "hashtags": ["#space", "#science", "#cosmos"],
+    "writingDate": "2024-03-12"
+  },
+  {
+    "id": 4,
+    "cover": "https://i.ibb.co.com/KXxcgGj/alicia-christin-gerald-zm4-Cc-Be-Bbp8-unsplash.jpg",
+    "title": "The Psychology of Success",
+    "author": "Michael Johnson",
+    "authorImg": "./images/authorImages/author4.jpg",
+    "readingTime": 10,
+    "hashtags": ["#psychology", "#success", "#selfhelp"],
+    "writingDate": "2024-04-05"
+  },
+  {
+    "id": 5,
+    "cover": "https://i.ibb.co.com/BCHfC8q/close-up-hands-typing-keyboard.jpg",
+    "title": "Vegan Recipes for Beginners",
+    "author": "Sophia Green",
+    "authorImg": "./images/authorImages/author5.jpg",
+    "readingTime": 6,
+    "hashtags": ["#vegan", "#recipes", "#food"],
+    "writingDate": "2024-05-20"
+  },
+  {
+    "id": 6,
+    "cover": "https://i.ibb.co.com/BCHfC8q/close-up-hands-typing-keyboard.jpg",
+    "title": "AI Revolution: What You Need to Know",
+    "author": "David Lee",
+    "authorImg": "./images/authorImages/author1.jpg",
+    "readingTime": 15,
+    "hashtags": ["#AI", "#technology", "#innovation"],
+    "writingDate": "2024-06-10"
+  },
+  {
+    "id": 7,
+    "cover": "https://i.ibb.co.com/FsdrpMY/lesly-juarez-DFtj-XYd5-Pto-unsplash.jpg",
+    "title": "Mindfulness for a Stress-Free Life",
+    "author": "Olivia Brown",
+    "authorImg": "./images/authorImages/author1.jpg",
+    "readingTime": 7,
+    "hashtags": ["#mindfulness", "#mentalhealth", "#wellness"],
+    "writingDate": "2024-07-01"
+  }
+]
